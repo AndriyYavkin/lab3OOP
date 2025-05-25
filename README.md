@@ -39,6 +39,7 @@ For small grids (18x11 cells in our test case), the parallel version demonstrate
 
 ## When Does Parallelization Help?
 This implementation becomes faster in parallel mode when:
+```bash
 Grid Size > 1000×1000 cells (~1 million cells)
 Generations > 100
 CPU Core Count > 4
