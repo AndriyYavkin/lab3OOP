@@ -29,7 +29,7 @@ public static class GameOfLifeExtension
         for (int i = 0; i < generations; i++)
         {
             game.NextGeneration();
-            WriteGenerationWithTime(game.CurrentGeneration, writer, aliveCell, deadCell, i + 1, sw.Elapsed);
+            //WriteGenerationWithTime(game.CurrentGeneration, writer, aliveCell, deadCell, i + 1, sw.Elapsed);
         }
 
         sw.Stop();
@@ -57,7 +57,7 @@ public static class GameOfLifeExtension
         for (int i = 0; i < generations; i++)
         {
             game.NextGeneration();
-            await WriteGenerationWithTimeAsync(game.CurrentGeneration, writer, aliveCell, deadCell, i + 1, sw.Elapsed);
+            //await WriteGenerationWithTimeAsync(game.CurrentGeneration, writer, aliveCell, deadCell, i + 1, sw.Elapsed);
         }
 
         sw.Stop();
